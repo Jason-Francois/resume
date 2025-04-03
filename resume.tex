@@ -1,0 +1,219 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+\usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+% \usepackage{helvet}
+% \renewcommand{\familydefault}{\sfdefault}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{8pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{3pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\textbf{\href{https://www.jasoncfrancois.com/}{\Large Jason Francois}} \\
+\vspace{5pt}
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  Chicago, IL & Email : \href{mailto:jasonc.francois@gmail.com}{jasonc.francois@gmail.com} \vspace{3pt} \\
+  \href{https://www.jasoncfrancois.com/}{\underline{Portfolio}} \hspace{3pt}
+  \href{https://www.github.com/Jason-Francois}{\underline{GitHub}}\hspace{3pt}
+  \href{https://www.linkedin.com/in/jasonc-francois/}{\underline{LinkedIn}} & Mobile: 215-490-6722
+\end{tabular*}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Drexel University}{Philadelphia, PA}
+      {Bachelor of Science (BS), Computer Science}{2024}
+      \begin{itemize}
+          \item Cumulative GPA: 3.88/4.0
+      \end{itemize}
+  \resumeSubHeadingListEnd
+  
+  % \resumeSubHeadingListStart
+  %   \resumeSubheading
+  %     {Cumulative GPA: 3.87}{}
+  % \resumeSubHeadingListEnd
+  
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Application Engineer Intern}{April 2023 -- January 2024}
+      {Vanguard}{Malvern, PA}
+    \resumeItemListStart{}
+      \resumeItem{Integrated new UI features in an Angular web application, enhancing functionality for 700+ advisors}
+      \resumeItem{Developed API endpoints for a NestJS web service, optimizing data handling with a DynamoDB database, and authored Jest framework unit tests to increase code coverage to 70\%}
+      
+      \resumeItem{Conducted accessibility testing using NVDA and JAWS screen readers, ensuring compliance with WCAG guidelines}
+    \resumeItemListEnd{}
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Web Development Co-op}{March 2022 - September 2022}
+      {Susquehanna International Group (SIG)}{Bala Cynwyd, PA}
+      \resumeItemListStart
+      \resumeItem{Created two dynamic web applications utilizing jQuery, C\#, and SQL Server}
+      \resumeItem{Launched a .NET build server using GitLab Runner, significantly boosting team-wide deployment capabilities by 100\%}
+      \resumeItem{Streamlined the deployment of internal NuGet packages by implementing automated processes using PowerShell scripts and GitLab CI/CD}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Developer Intern}{March 2021 - September 2021}
+      {The Stratagem Group}{King Of Prussia, PA}
+      \resumeItemListStart
+        \resumeItem{Revitalized the front-end of a web application for a home health agency by implementing a jQuery-driven rewrite, resulting in improved user experience and enhanced visual aesthetics}
+        \resumeItem{Crafted dynamic data visualization modules using TypeScript, React, and Chart.js}
+        \resumeItem{Led daily stand-up meetings in the role of an interim Scrum Master}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+              {\textbf{\href{https://countries-api-six-alpha.vercel.app/}{\underline{CountriesAPI}}} $|$ \emph{React, Tailwind, NextJS}}{}
+              \resumeItemListStart
+                \resumeItem{Consists of a server-side rendered dashboard that exhibits information from a wide array of countries}
+                \resumeItem{Consumes the REST Countries API to acquire detailed information of over 200 countries}
+                \resumeItem{Utilizes React's Context API to establish a toggle mechanism for switching between light and dark themes.}
+              \resumeItemListEnd
+        \resumeProjectHeading
+              {\textbf{\href{https://ip-tracker-jason-francois.vercel.app/}{\underline{IPTracker}}} $|$ \emph{React, SCSS}}{}
+              \resumeItemListStart
+                \resumeItem{A React-based web app showcasing the geolocation of an IP address}
+                \resumeItem{Utilizes the ipify API to retrieve address information}
+                \resumeItem{Employs Google's Maps JavaScript API to identify locations with map markers}
+              \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: JavaScript, TypeScript, Python, SQL, HTML, CSS, C\#, Java} \\
+     \textbf{Frameworks}{: React, Angular, Express, Next.js, ASP.NET Core, Entity Framework} \\
+     \textbf{Developer Tools}{: Git, Jira, SQL Server Management Studio, VS Code, Visual Studio, IntelliJ, Vim} \\
+     \textbf{Libraries}{: jQuery, Bootstrap, Tailwind CSS, Kendo UI}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
